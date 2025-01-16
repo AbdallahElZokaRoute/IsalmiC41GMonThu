@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="color_gold">#E2BE7F</color>
+    <color name="color_gold_dark">#E2BE7F</color>
+    <color name="color_active_item_indicator">#99202020</color>
 </resources>
