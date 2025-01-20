@@ -6,9 +6,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.route.islamic41gmonthu.databinding.FragmentQuranBinding
+import com.route.islamic41gmonthu.home.adapters.ChaptersAdapter
+import com.route.islamic41gmonthu.home.model.AppConstants
 
 class QuranFragment : Fragment() {
     lateinit var binding: FragmentQuranBinding
+    lateinit var adapter: ChaptersAdapter
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -21,5 +24,7 @@ class QuranFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        adapter = ChaptersAdapter(AppConstants.getChaptersList())
+        binding.chaptersListRecyclerView.adapter = adapter
     }
 }
