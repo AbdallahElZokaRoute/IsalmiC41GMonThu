@@ -5,12 +5,14 @@ plugins {
 
 android {
     namespace = "com.route.islamic41gmonthu"
-    compileSdk = 34
-
+    compileSdk = 35
+    buildFeatures {
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "com.route.islamic41gmonthu"
         minSdk = 23
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
