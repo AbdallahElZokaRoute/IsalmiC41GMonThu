@@ -3,6 +3,7 @@ package com.route.islamic41gmonthu.home.model
 
 
 object AppConstants {
+    val CHAPTER_KEY = "chapter"
     val arabicChaptersTitles = listOf(
         "الفاتحه",
         "البقرة",
